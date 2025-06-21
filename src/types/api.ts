@@ -3,7 +3,7 @@ export interface IBackendResponse<T> {
   statusCode: number;
   success: boolean;
   message?: string;
-  data: T; // The actual data payload
+  data: T;
   meta?: {
     page: number;
     limit: number;
@@ -15,6 +15,6 @@ export interface IBackendErrorResponse {
   statusCode: number;
   success: boolean;
   message: string;
-  errorMessages: { path: string; message: string }[];
+  errorMessages: { path: string | number; message: string }[];
   stack?: string;
 }
