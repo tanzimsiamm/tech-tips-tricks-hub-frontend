@@ -7,9 +7,9 @@ const registerValidationSchema = z.object({
   password: z
     .string()
     .trim()
-    .min(1, "Password is required"),
-  image: z.string().url("Invalid image URL").optional().or(z.literal('')),
-  role: z.enum(['user', 'admin']).optional().default('user'),
+    .min(1, "Password is required"), // Min 1 character as per backend
+  image: z.string().url("Invalid image URL").optional().or(z.literal('')), // Allow empty string or URL for optional image
+  role: z.enum(['user', 'admin']).optional().default('user'), // Backend defaults, but type here for explicit payloads
 });
 
 export default registerValidationSchema;

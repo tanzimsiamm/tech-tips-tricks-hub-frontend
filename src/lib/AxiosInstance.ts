@@ -5,7 +5,7 @@ import axios from "axios";
 import { cookies } from "next/headers";
 
 import envConfig from "@/src/config/envConfig";
-import { getNewAccessToken } from "../service/AuthService";
+import { getNewAccessToken } from "../services/AuthService";
 
 const axiosInstance = axios.create({
   baseURL: envConfig.baseApi,

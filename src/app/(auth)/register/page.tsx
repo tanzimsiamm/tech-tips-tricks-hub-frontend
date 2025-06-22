@@ -10,7 +10,7 @@ import { useEffect } from "react";
 import { toast } from "sonner";
 
 import registerValidationSchema from "@/src/schemas/register.schema";
-import { useUserRegistration } from "@/src/hook/auth.hook"; // Adjusted path
+import { useUserRegistration } from "@/src/hooks/auth.hook"; // Adjusted path
 import FXInput from "@/src/components/form/FXInput";
 import FXForm from "@/src/components/form/FXForm";
 import { useUser } from "@/src/context/user.provider";

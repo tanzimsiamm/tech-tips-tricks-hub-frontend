@@ -2,7 +2,7 @@
 import { NextResponse } from "next/server";
 import { NextRequest } from "next/server";
 import { IUserFrontend } from "./types/user";
-import { getCurrentUser } from "./service/AuthService";
+import { getCurrentUser } from "./services/AuthService";
 
 // Define authentication routes (publicly accessible even if not logged in)
 // Update based on your actual (commonLayout) structure and public routes

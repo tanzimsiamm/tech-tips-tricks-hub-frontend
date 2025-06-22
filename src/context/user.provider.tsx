@@ -14,7 +14,7 @@ import {
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
 
-import { getCurrentUser, logout as serverLogout } from "../service/AuthService";
+import { getCurrentUser, logout as serverLogout } from "../services/AuthService";
 import { queryClient } from "../lib/queryClient";
 import { IUserFrontend } from "../types/user";
 

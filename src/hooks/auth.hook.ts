@@ -5,7 +5,7 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
 
-import { loginUser as loginUserServer, registerUser as registerUserServer } from "../service/AuthService";
+import { loginUser as loginUserServer, registerUser as registerUserServer } from "../services/AuthService";
 import { ILoginPayloadFrontend, IRegisterPayloadFrontend, IAuthResponseData } from "../types/auth";
 import { useUser } from "../context/user.provider";
 

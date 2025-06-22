@@ -2,7 +2,7 @@
 'use client';
 
 import React from 'react';
-import { Button } from '@nextui-org/button';
+import { Button } from '@heroui/button';
 import { useUser } from '../../../context/user.provider'; // Adjust path
 import Link from 'next/link';
 

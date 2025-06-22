@@ -6,7 +6,7 @@ const loginValidationSchema = z.object({
   password: z
     .string()
     .trim()
-    .min(1, "Password is required"),
+    .min(1, "Password is required"), // Min 1 character as per backend
 });
 
 export default loginValidationSchema;
